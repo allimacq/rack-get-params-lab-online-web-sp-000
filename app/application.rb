@@ -20,13 +20,13 @@ class Application
       end
     end
     elsif req.path.match(/add/)
-      p "testing"
-      #search_word = req.params["q"]
+      search_word = req.params["q"]
       
-      #if @@items.include?(search_word)
+      if @@items.include?(search_word)
+        p "testing"
         #@@cart << search_word
         #final_response = resp.wrtie "added #{search_word}"
-     # end
+      end
       #final_response
     elsif req.path.match(/search/)
       search_term = req.params["q"]
