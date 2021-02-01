@@ -22,8 +22,8 @@ class Application
     elsif req.path.match(/add/)
       search_word = req.params["q"]
       
-      if @@items.include?(search_word)
-        p "testing"
+      p @@items.include?(search_word)
+        #p "testing"
         #@@cart << search_word
         #final_response = resp.wrtie "added #{search_word}"
       end
