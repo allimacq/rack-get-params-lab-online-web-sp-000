@@ -20,7 +20,7 @@ class Application
       end
     end
     elsif req.path.match(/add/)
-      search_word = req.params["q"]
+      p search_word = req.params["q"]
       
       p @@items.include?(search_word)
         #p "testing"
