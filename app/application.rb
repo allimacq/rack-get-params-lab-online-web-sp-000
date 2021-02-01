@@ -26,7 +26,7 @@ class Application
       #if @@items.include?(search_word)
         #@@cart << search_word
         #final_response = resp.wrtie "added #{search_word}"
-      end
+     # end
       #final_response
     elsif req.path.match(/search/)
       search_term = req.params["q"]
