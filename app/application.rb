@@ -24,7 +24,7 @@ class Application
       
       if @@items.include?(search_word)
         p "testing"
-        #@@cart << search_word
+        @@cart << search_word
         #final_response = resp.wrtie "added #{search_word}"
       else
         resp.write "We don't have that item"
