@@ -20,7 +20,7 @@ class Application
       end
     end
     elsif req.path.match(/add/)
-      p add_term = req.params["q"]
+      p add_term = req.params["item"]
       
       if @@items.include?(add_term)
         p @@cart
